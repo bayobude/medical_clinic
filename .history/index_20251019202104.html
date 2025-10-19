@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Medical Clinic | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header">
+    <h1>Harmony Medical Clinic</h1>
+    <p>Compassionate care, modern medicine</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content yahoo-layout">
+    <section class="main-column">
+      <div class="slideshow">
+        <img src="images/clinic1.jpg" class="slide active" alt="Clinic reception">
+        <img src="images/clinic2.jpg" class="slide" alt="Doctor with patient">
+        <img src="images/clinic3.jpg" class="slide" alt="Modern medical equipment">
+        <img src="images/clinic4.jpg" class="slide" alt="Nurses at work">
+      </div>
+
+      <h2>Welcome to Harmony Medical Clinic</h2>
+      <p>
+        At Harmony Medical Clinic, we provide comprehensive healthcare services to families and individuals.
+        Our team of dedicated doctors and nurses are committed to delivering compassionate care using the latest technology.
+      </p>
+
+      <p>
+        We offer general consultations, wellness checks, vaccinations, and a range of specialized services.
+        Visit our clinic or book an appointment online today.
+      </p>
+
+      <a href="form.html" class="btn">Book an Appointment</a>
+    </section>
+
+    <aside class="sidebar">
+      <div class="info-card">
+        <h3>Clinic Hours</h3>
+        <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 3:00 PM<br>Sun: Closed</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Contact</h3>
+        <p>📞 (416) 555-0134<br>📧 info@harmonymedical.ca</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Emergency</h3>
+        <p>For urgent care, call <strong>911</strong> immediately.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; <span id="year"></span> Harmony Medical Clinic. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Footer Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Slideshow Script
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 10000); // every 10 seconds
+  </script>
+</body>
+</html>

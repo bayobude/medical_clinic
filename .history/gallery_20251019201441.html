@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Harmony Medical Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header">
+    <h1>Harmony Medical Clinic</h1>
+    <p>Compassionate care, modern medicine</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content yahoo-layout">
+    <section class="main-column">
+      <h2>Clinic Gallery</h2>
+      <p>Explore images from our facility and patient care areas.</p>
+
+      <div class="gallery-grid">
+        <img src="images/clinic1.jpg" alt="Clinic exterior">
+        <img src="images/clinic2.jpg" alt="Reception area">
+        <img src="images/clinic3.jpg" alt="Consultation room">
+        <img src="images/clinic4.jpg" alt="Waiting area">
+        <img src="images/clinic5.jpg" alt="Medical equipment">
+        <img src="images/clinic6.jpg" alt="Doctor with patient">
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="info-card">
+        <h3>Patient-Centered Design</h3>
+        <p>Our environment promotes comfort, safety, and privacy.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; <span id="year">2025</span> Harmony Medical Clinic. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<label>Phone:<br><input type="tel" name="phone" placeholder="+1 234 567 890"></label>
+<label>Date of birth:<br><input type="date" name="dob"></label>
+</fieldset>
+
+
+<fieldset>
+<legend>Appointment details</legend>
+<label>Preferred date:<br><input type="date" name="apt_date"></label>
+<label>Preferred time:<br><input type="time" name="apt_time"></label>
+
+
+<label>Service type:<br>
+<select name="service">
+<option>Wellness Check</option>
+<option>Vaccination</option>
+<option>Minor Procedure</option>
+</select>
+</label>
+
+
+<p>Urgency:</p>
+<label><input type="radio" name="urgency" value="low" checked> Low</label>
+<label><input type="radio" name="urgency" value="medium"> Medium</label>
+<label><input type="radio" name="urgency" value="high"> High</label>
+
+
+<label>Subscribe to reminders: <input type="checkbox" name="reminders" checked></label>
+
+
+<label>Number of patients (if booking for family):<br><input type="number" name="num" min="1" max="10" value="1"></label>
+
+
+<label>Preferred contact color (just for demo):<br><input type="color" name="favcolor"></label>
+
+
+<label>Attach insurance card (image/pdf):<br><input type="file" name="insurance"></label>
+
+
+<label>Health notes:<br><textarea name="notes" rows="4"></textarea></label>
+
+
+<label>Pain scale (0-10):<br><input type="range" name="pain" min="0" max="10" value="0"></label>
+</fieldset>
+
+
+<button type="submit">Request Appointment</button>
+</form>
+
+
+</article>
+</section>
+
+
+<aside class="content-side">
+<div class="card">
+<h3>What to bring</h3>
+<ul>
+<li>ID</li>
+<li>Insurance card</li>
+<li>List of medications</li>
+</ul>
+</div>
+</aside>
+</main>
+
+
+<footer class="site-footer">
+<p>&copy; <span id="year">2025</span> Harmony Medical Clinic</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Medical Clinic | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header">
+    <h1>Harmony Medical Clinic</h1>
+    <p>Compassionate care, modern medicine</p>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content area mimicking Yahoo layout -->
+  <main class="content yahoo-layout">
+    <!-- Left/Main section -->
+    <section class="main-column">
+      <h2>Welcome to Harmony Medical Clinic</h2>
+      <p>
+        At Harmony Medical Clinic, we combine expert medical care with compassion and respect for every patient.
+        Our clinic provides family medicine, wellness checkups, and preventive care services for all ages.
+      </p>
+
+      <h3>Our Core Services</h3>
+      <ul>
+        <li>Family Medicine and General Checkups</li>
+        <li>Vaccinations and Immunizations</li>
+        <li>Laboratory Testing</li>
+        <li>Minor Surgical Procedures</li>
+      </ul>
+
+      <h3>Consultation Rates</h3>
+      <table class="rates-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Duration</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General Consultation</td>
+            <td>30 minutes</td>
+            <td>$60</td>
+          </tr>
+          <tr>
+            <td>Wellness Check</td>
+            <td>45 minutes</td>
+            <td>$80</td>
+          </tr>
+          <tr>
+            <td>Minor Procedure</td>
+            <td>1 hour</td>
+            <td>$150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Right sidebar section (like Yahoo.com’s right block) -->
+    <aside class="sidebar">
+      <div class="info-card">
+        <h3>Clinic Hours</h3>
+        <p>
+          <strong>Mon - Fri:</strong> 8:00 AM – 5:00 PM <br>
+          <strong>Saturday:</strong> 9:00 AM – 12:00 PM <br>
+          <strong>Sunday:</strong> Closed
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="form.html">Book Appointment</a></li>
+          <li><a href="contact.html">Find Us</a></li>
+          <li><a href="gallery.html">View Clinic Photos</a></li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Patient Testimonial</h3>
+        <p>"I’ve never met a more caring staff. The doctors took time to really listen."</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; <span id="year">2025</span> Harmony Medical Clinic. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

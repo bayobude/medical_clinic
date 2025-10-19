@@ -1,0 +1,94 @@
+/* Main stylesheet for Harmony Medical Clinic site
+color:white; /* header text color */
+padding:16px 24px;
+display:flex;justify-content:space-between;align-items:center;gap:20px;
+}
+
+
+.brand h1{margin:0;font-size:1.4rem}
+.brand .tag{margin:0;font-size:0.9rem;opacity:0.95}
+
+
+/* Class selector (used widely) */
+.menu{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+.menu li{display:inline}
+.menu a{display:inline-block;padding:8px 10px;border-radius:6px;text-decoration:none}
+
+
+/* IMPORTANT: using inherit for link color so links inside header pick up header color.
+Remove `color: inherit;` to see links revert to browser default color (visible change). */
+#site-header .menu a{color:inherit; /* <- inheritance example */}
+
+
+/* Example of cascade with !important: we force menu links to have a distinctive accent color
+This may override other color declarations. Remove `!important` to see it change. */
+.menu a{color: var(--accent) !important; /* <- cascade / !important example */}
+
+
+.main-nav{margin-left:auto}
+
+
+.content{width:100%;max-width:1100px;margin:24px auto;display:grid;gap:20px;padding:0 16px;align-items:start}
+
+
+/* Two-column layout (content area) */
+.two-column{grid-template-columns: 2fr 1fr}
+/* Three-column option for gallery page (more columns) */
+.three-column{grid-template-columns: 2fr 1fr 1fr}
+
+
+.card{background:white;padding:18px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+
+
+.content-main{min-height:300px}
+.content-side{min-width:220px}
+
+
+/* gallery grid */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.gallery-grid img{width:100%;height:auto;border-radius:6px;display:block}
+.gallery-grid figure{margin:0}
+
+
+/* Tables */
+table{width:100%;border-collapse:collapse;margin-top:12px}
+table th, table td{border:1px solid #e0e6e6;padding:8px;text-align:left}
+table thead{background:#f0f6f6}
+
+
+/* Footer */
+.site-footer{margin-top:auto;padding:14px 16px;background:#f1f5f5;text-align:center}
+.site-footer a{color:inherit;text-decoration:none}
+
+
+/* Form styles */
+form label{display:block;margin-bottom:10px}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select, textarea, input[type="number"]{width:100%;padding:8px;border-radius:4px;border:1px solid #ccd6d6}
+button{background:var(--brand-bg);color:white;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
+
+
+/* ID selector used again for a specific element (example) */
+#year{font-weight:700}
+
+
+/* Responsive */
+@media (max-width:900px){
+.content.two-column, .content.three-column{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+
+/* Accessibility focus states */
+.menu a:focus, button:focus, input:focus, textarea:focus{outline:3px solid var(--accent);outline-offset:2px}
+
+
+/* Small visual tweak: testimonials */
+.testimonial{background:linear-gradient(180deg, #fcffff, #f2fbfb)}
+
+
+/* Additional note: remove the !important on `.menu a` and remove `color:inherit` on `#site-header .menu a` to observe both behaviors */
+
+
+
+
+<!-- End of stylesheet -->
