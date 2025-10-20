@@ -78,6 +78,15 @@ main-column h2 {
   margin-bottom: 15px;
   border-radius: 8px;
 }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+}
 
 /* Footer */
 #site-footer {
