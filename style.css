@@ -146,6 +146,104 @@ footer p {
   pointer-events: auto;
   z-index: 2;
 }
+/* --- Form Styles --- */
+
+/* Styles for the form container */
+.appointment-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Common styles for text inputs, select, and textarea */
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="tel"],
+.appointment-form input[type="date"],
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Make labels bold and add spacing */
+.appointment-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling for radio button and checkbox groups */
+.radio-group,
+.checkbox-group {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fafafa;
+}
+
+/* Style individual radio/checkbox labels to be normal weight */
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the box/radio and the text */
+  cursor: pointer;
+}
+
+/* Container for the form buttons */
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+.content {
+  margin: 0 auto;
+  max-width: 900px;
+}
+/* Common button styling */
+.submit-btn,
+.back-btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Specific style for the submit button */
+.submit-btn {
+  background-color: #007bff; /* A standard blue */
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Specific style for the 'Back' link, making it look like a button */
+.back-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.back-btn:hover {
+  background-color: #e0e0e0;
+}
 
 /* sensible fallback on small screens */
 @media (max-width: 600px) {
